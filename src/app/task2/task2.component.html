@@ -1,0 +1,9 @@
+
+
+
+
+<button class="btn btn-success" (click)="showButtonF()">Display Details</button>
+<p *ngIf="showButton">The Second Task</p>
+<p *ngFor="let logItem of showingList"
+[ngStyle]="{backgroundColor: logItem>= 5 ? 'pink':'transparent'}"
+[ngClass]="{'white-text': logItem>=5}">{{logItem}}</p>
